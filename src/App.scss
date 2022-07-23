@@ -1,0 +1,36 @@
+.App {
+  background-image: url("./img/galaxy1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  backdrop-filter: blur(2px);
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  min-height: 100vh;
+  width: 100%;
+  /* outline: 2px solid red; */
+}
+
+.container {
+  margin: 1em;
+}
