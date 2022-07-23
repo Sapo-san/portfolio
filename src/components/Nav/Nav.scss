@@ -1,0 +1,17 @@
+.Navbar {
+
+    position: fixed;
+    top: 1em;
+    left: 1em;
+
+    width: calc(100% - 2em);
+    
+
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1em;
+}
+
+.NavLink {
+    font-size: 2em;
+    padding: 0.5em;
+}

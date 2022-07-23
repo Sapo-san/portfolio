@@ -25,6 +25,24 @@
     justify-content: center;
 }
 
+.welcome-link {
+  margin: 0.5em;
+  color: white;
+  background-color: purple;
+  padding: 0.4em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 1em;
+  text-decoration: none;
+  transition: 0.3s;
+  text-shadow: none;
+}
+
+.welcome-link:hover {
+    background-color: rgb(162, 0, 162);
+}
+
 .portfolio {
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -36,7 +54,7 @@
     padding: 1em;
     border-radius: 1.5em;
 
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 @media only screen and (max-width: 1300px) {

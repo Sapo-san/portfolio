@@ -10,6 +10,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {
@@ -28,10 +35,6 @@ button {
   border-radius: 1em;
 
   transition: 0.3s;
-}
-
-h1, h2, h3, h4 {
-  margin: 0.5rem;
 }
 
 button:hover {
@@ -54,4 +57,8 @@ a {
 
 a:hover {
   color: cyan;
+}
+
+h1, h2, h3, h4 {
+  margin: 0.5rem;
 }

@@ -5,6 +5,7 @@ import './welcome.scss'
 import timberli from '../../img/timberli.png'
 import videogamepi from '../../img/videogameapp.png'
 import profilepic from '../../img/profilepic.webp'
+import { Link } from 'react-router-dom'
 
 const Welcome = () => {
 
@@ -20,7 +21,7 @@ const Welcome = () => {
 
         <div className='welcome-buttons'>
           <button onClick={() => PortfolioRef.current.scrollIntoView()}>Check my Portfolio</button>
-          <button>Utility / Other</button>
+          <Link className="welcome-link" to="/home">Utility / Other</Link>
         </div>
       </div>
 
