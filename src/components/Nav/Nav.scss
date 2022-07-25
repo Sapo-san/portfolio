@@ -5,6 +5,7 @@
     left: 1em;
 
     width: calc(100% - 2em);
+    height: 5em;
     
 
     background-color: rgba(0, 0, 0, 0.6);
@@ -12,6 +13,22 @@
 }
 
 .NavLink {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 2em;
-    padding: 0.5em;
+    padding: 0.2em;
+
+    background-color: rgba(128, 0, 128, 0.6);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    border-radius: 0.5em;
+    min-width: 5em;
+
+    transition: 0.5s;
+}
+
+.NavLink:hover {
+    background-color: purple;
+    color: white;
 }

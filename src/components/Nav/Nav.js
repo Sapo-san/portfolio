@@ -13,7 +13,7 @@ const Nav = () => {
 
     return (
         <nav className='Navbar flex row centered'>
-            <NavLink className="NavLink" to="/">Landing Page</NavLink>
+            <NavLink className="NavLink" to="/">Welcome</NavLink>
             <NavLink className="NavLink" to="/home">Home</NavLink>
         </nav>
   )
