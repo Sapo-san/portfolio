@@ -7,7 +7,7 @@ const Nav = () => {
 
     const [showNavInMobile, setShowNavInMobile] = useState(false);
     const [navLinkContainerClass, setNavLinkContainerClass] = useState('burger-container hide')
-    const [navbarClass, setNavbarClass] = useState('Navbar flex row centered')
+    const [navbarClass, setNavbarClass] = useState('navbar flex row centered')
 
     const location = useLocation()
 
@@ -15,11 +15,11 @@ const Nav = () => {
         
         if (showNavInMobile) {
             setNavLinkContainerClass('navlink-container')
-            setNavbarClass('Navbar flex row centered fullOpacity')
+            setNavbarClass('navbar flex row centered fullOpacity')
 
         } else {
             setNavLinkContainerClass('navlink-container hide')
-            setNavbarClass('Navbar flex row centered')
+            setNavbarClass('navbar flex row centered')
 
         }
 
@@ -44,16 +44,16 @@ const Nav = () => {
             </div>
 
             <div className={navLinkContainerClass}>
-                <NavLink className="NavLink" to="/" onClick={() => {
+                <NavLink className="navLink" to="/" onClick={() => {
                     setShowNavInMobile(false)
                 }}>Welcome</NavLink>
-                <NavLink className="NavLink" to="/home" onClick={() => {
+                <NavLink className="navLink" to="/home" onClick={() => {
                     setShowNavInMobile(false)
                 }}>Home</NavLink>
-                <NavLink className="NavLink" to="/about" onClick={() => {
+                <NavLink className="navLink" to="/about" onClick={() => {
                     setShowNavInMobile(false)
                 }}>About</NavLink>
-                <NavLink className="NavLink" to="/utility" onClick={() => {
+                <NavLink className="navLink" to="/utility" onClick={() => {
                     setShowNavInMobile(false)
                 }}>Utility</NavLink>
             </div>

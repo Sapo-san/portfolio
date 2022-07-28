@@ -20,6 +20,7 @@
 .welcome-buttons {
     max-width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -37,6 +38,13 @@
   text-decoration: none;
   transition: 0.3s;
   text-shadow: none;
+  width: auto;
+}
+
+.readMoreButton {
+    width: 7em;
+    align-self: center;
+    text-align: center;
 }
 
 .welcome-link:hover {
@@ -94,8 +102,6 @@
     }
 }
 
-
-
 .profile {
     flex-wrap: wrap;
 }
@@ -125,13 +131,16 @@
     }
 }
 
-
-
-
 .aboutme-p1 {
     font-size: 1.4em;
 }
 
 .aboutme-p2 {
     font-size: 1.3em;
+}
+
+@media only screen and (max-width: 900px) {
+    .portfolio-title {
+        align-self: center;
+    }
 }

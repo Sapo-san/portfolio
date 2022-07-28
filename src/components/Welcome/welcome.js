@@ -6,6 +6,7 @@ import timberli from '../../img/timberli.png'
 import videogamepi from '../../img/videogameapp.png'
 import profilepic from '../../img/profilepic.webp'
 import { Link } from 'react-router-dom'
+import englishCv from '../../files/cv_en.pdf';
 
 const Welcome = () => {
 
@@ -20,7 +21,8 @@ const Welcome = () => {
         <h2 className='welcome-subtitle'>How can I help you?</h2>
 
         <div className='welcome-buttons'>
-          <button onClick={() => PortfolioRef.current.scrollIntoView()}>Check my Portfolio</button>
+          <button onClick={() => PortfolioRef.current.scrollIntoView()}>Check Portfolio</button>
+          <a className="welcome-link" href={englishCv} download="CV Cristobal Herreros">Download Resume</a>
           <Link className="welcome-link" to="/home">Utility / Other</Link>
         </div>
       </div>
@@ -29,11 +31,10 @@ const Welcome = () => {
       <div ref={PortfolioRef} className='portfolio slide flex row'>
         {/* Projectos */}
         <div className='container flex column portfolio-section'>
-          <h1>Projects:</h1>
+          <h1 className='portfolio-title'>Projects:</h1>
           <p>
             These are my finished projects:
           </p>
-
             {/* Project #1 */}
             <div className='project flex row centered'>
               <img className="project-img" src={timberli} alt="timberli-img"></img>
@@ -62,7 +63,7 @@ const Welcome = () => {
 
         {/* Sobre Mi */}
         <div className='portfolio-section container flex column'>
-          <h1>About me:</h1>
+          <h1 className='portfolio-title'>About me:</h1>
 
           <div className='flex row centered profile'>
             <img className='profilepic' src={profilepic} alt="profilepic"></img>
@@ -84,7 +85,7 @@ const Welcome = () => {
             and everything related to them. 
             <br/>
             <br/>
-            Previous experiences? I've done a bit of freelancing here and there, 
+            Previous experiences? I've done a bit of freelancing here and there (click on "Read more" below to see a complete list), 
             also I was teaching assistant for the Computer's Architecture back in university.
           </p>
           <p className='aboutme-p2'>
@@ -97,7 +98,9 @@ const Welcome = () => {
             <li>Agile Methodologies: Scrum, Kanban</li>
           </ul>
 
-          <h1>Want to contact me?</h1>
+          <Link className="welcome-link readMoreButton" to="/about">Read More</Link>
+
+          <h1 className='portfolio-title'>Want to contact me?</h1>
           <p>
             ➜ You can send me a message on <a href="https://www.linkedin.com/in/cristobalherreros/">LinkedIn</a>
             <br/>

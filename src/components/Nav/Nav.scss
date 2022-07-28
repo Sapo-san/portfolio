@@ -1,4 +1,4 @@
-.Navbar {
+.navbar {
     position: fixed;
     top: 1em;
     left: 1em;
@@ -32,7 +32,7 @@
     transform-origin: top;
 }
 
-.NavLink {
+.navLink {
     text-align: center;
     color: white;
     font-size: 2em;
@@ -51,7 +51,7 @@
     transition: 0.5s;
 }
 
-.NavLink:hover {
+.navLink:hover {
     background-color: purple;
     color: white;
 }
