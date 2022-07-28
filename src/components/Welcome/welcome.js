@@ -86,7 +86,7 @@ const Welcome = () => {
             <br/>
             <br/>
             Previous experiences? I've done a bit of freelancing here and there (click on "Read more" below to see a complete list), 
-            also I was teaching assistant for the Computer's Architecture back in university.
+            also I was teaching assistant for the Computer's Architecture course back in university.
           </p>
           <p className='aboutme-p2'>
           My current Tech Stack is:
