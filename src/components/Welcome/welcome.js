@@ -50,14 +50,14 @@ const Welcome = () => {
             <div className="project flex row centered">
               <div className="project-txt">
                 <p><b>Videogame App - Henry Bootcamp Individual Project:</b> I made this app to practice
-                all of what I learned in Henry Bootcamp in one single project. It's a simple app that consumes
-                RAWG API, it can sort, filter and create Videogame Titles and displays them in a simple UI. Here's
+                all of what I learned in Henry Bootcamp in one single project. It&apos;s a simple app that consumes
+                RAWG API, it can sort, filter and create Videogame Titles and displays them in a simple UI. Here&apos;s
                 the <a href="https://github.com/Sapo-san/PI-Videojuegos">Link to the repo</a>.</p>
               </div>
               <img className="project-img" src={videogamepi} alt="timberli-img"></img>  
             </div>
           <p>
-          If you want to see other projects I'm currently working on, you can check out my <a href="https://github.com/Sapo-san">Github account</a>.
+          If you want to see other projects I&apos;m currently working on, you can check out my <a href="https://github.com/Sapo-san">Github account</a>.
           </p>
         </div>
 
@@ -85,8 +85,8 @@ const Welcome = () => {
             and everything related to them. 
             <br/>
             <br/>
-            Previous experiences? I've done a bit of freelancing here and there (click on "Read more" below to see a complete list), 
-            also I was teaching assistant for the Computer's Architecture course back in university.
+            Previous experiences? I&apos;ve done a bit of freelancing here and there (click on &quot;Read more&quot; below to see a complete list), 
+            also I was teaching assistant for the Computer&apos;s Architecture course back in university.
           </p>
           <p className='aboutme-p2'>
           My current Tech Stack is:

@@ -51,7 +51,7 @@ $ sudo -u postgres createdb <database name>
 
 ### Useful commands inside psql
 \`\`\`
-\dt - see relations in DB
+\\dt - see relations in DB
 \`\`\`
 
 Useful links: 
