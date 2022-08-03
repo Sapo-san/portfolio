@@ -16,11 +16,13 @@
 
 .cheatsheet-selector {
     border-radius: 1em;
-    width: calc(100% - 0.25em);
+    width: 60%;
     margin-bottom: 0.5em;
     height: 90px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.653);
     padding: 0.25em;
 }
@@ -43,6 +45,8 @@
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
+
+    width: 100%;
 }
 
 .avaible-cheatsheet-button {
@@ -68,6 +72,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .cheatsheet-selector {
+        width: calc(100% - 0.25em);
+    }
+    
     .cheatsheets-search {
         width: calc(100% - 2em);
     }

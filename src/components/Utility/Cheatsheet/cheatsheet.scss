@@ -26,7 +26,7 @@
 }
 
 .cheatsheet {
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-right: 0.5em;
     height: 100%;
     width: calc(100% - 0.5em);
