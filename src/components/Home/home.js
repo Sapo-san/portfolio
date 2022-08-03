@@ -7,9 +7,13 @@ const Home = () => {
       <div className='home flex centered column'>
         <h1>Hello again!</h1>
         <p>I don't want to have this website just as my portfolio
-          so I'm planning to add a few helpful features for me, but these are still on development </p>
+          so I'll be adding new features to it from time to time.</p>
 
-        <h1>Stay tuned 👀</h1>
+        <p>I recently added some simple cheatsheets / guides I previously made to make working easier for me (or other Jr devs).</p>
+
+        <p>These were originally for personal use but I am now sharing them here (See "Utility" in Navbar). Hope they are useful if you check them out.</p>
+
+        <h1>Stay tuned for more 👀</h1>
       </div>
     </div>
   )

@@ -23,7 +23,7 @@ const Welcome = () => {
         <div className='welcome-buttons'>
           <button onClick={() => PortfolioRef.current.scrollIntoView()}>Check Portfolio</button>
           <a className="welcome-link" href={englishCv} download="CV Cristobal Herreros">Download Resume</a>
-          <Link className="welcome-link" to="/home">Utility / Other</Link>
+          <Link className="welcome-link" to="/home">Other</Link>
         </div>
       </div>
 

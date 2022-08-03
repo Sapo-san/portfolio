@@ -8,7 +8,10 @@ import { ArchLinux } from './cheatsheets/archlinux'
 
 const Cheatsheet = ({ cheatsheetId }) => {
 
-  const DefaultCheatsheet = <div>
+  const DefaultCheatsheet = <div className='welcome-cheatsheet'>
+    <h1>Cheatsheets</h1>
+    <p>Click/Tap the buttons above to load a cheatsheet.</p>
+    <p>For programming language cheatsheets, I suggest you check the <a href="https://learnxinyminutes.com/">Learn X in Y minutes</a> website.</p>
 
   </div>
 
