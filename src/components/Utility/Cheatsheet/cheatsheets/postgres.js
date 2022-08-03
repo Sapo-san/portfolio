@@ -3,7 +3,7 @@ export const Postgres = `
 
 Note: All commands are meant for Ubuntu 20.02, OS that I was using at the time of writing this cheatsheet. 
 
-This is a very short cheatsheet since I used Sequelize ORM to interact with the database and make queries instead of doing them myself.
+This is a very short cheatsheet since I used Sequelize ORM to interact with the database and make queries instead of doing them myself. I used these to check if everything was correctly set up by Sequelize.
 
 ### Start Postgres server
 \`\`\`bash

@@ -31,6 +31,8 @@
     height: 100%;
     width: calc(100% - 0.5em);
     overflow-x: hidden;
+
+    word-wrap: normal;
 }
 
 .cheatsheet p {
@@ -51,11 +53,11 @@
 
 .cheatsheet pre code {
     color: rgb(255, 255, 255);
-    word-wrap: break-word;
 }
 
 .cheatsheet ul {
     text-align: left;
+    font-size: 1em;
 }
 
 

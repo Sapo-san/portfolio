@@ -6,8 +6,8 @@ import Cheatsheet from './Cheatsheet/cheatsheet'
 const Utility = () => {
 
   const avaibleCheatsheets = [
-    "Docker",
     "ArchLinux",
+    "Docker",
     "Postgres",
   ]
 

@@ -3,6 +3,8 @@ import './cheatsheet.scss'
 import { marked } from 'marked'
 
 import { Postgres } from './cheatsheets/postgres'
+import { Docker } from './cheatsheets/docker'
+import { ArchLinux } from './cheatsheets/archlinux'
 
 const Cheatsheet = ({ cheatsheetId }) => {
 
@@ -13,8 +15,13 @@ const Cheatsheet = ({ cheatsheetId }) => {
   function returnCheatsheet(cheatsheetId) {
     switch (cheatsheetId) {
       case "Postgres":
-        
-      return returnMarkdownHtml(Postgres)
+        return returnMarkdownHtml(Postgres)
+
+      case "Docker":
+        return returnMarkdownHtml(Docker)
+      
+      case "ArchLinux":
+        return returnMarkdownHtml(ArchLinux)
     
       default:
         return DefaultCheatsheet;
