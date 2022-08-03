@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactPropTypes } from 'react'
+import PropTypes from 'prop-types'
 import './cheatsheet.scss'
 import { marked } from 'marked'
 
@@ -8,8 +8,6 @@ import { Docker } from './cheatsheets/docker'
 import { ArchLinux } from './cheatsheets/archlinux'
 
 const Cheatsheet = ({ cheatsheetId }) => {
-
-  this.React
 
   const DefaultCheatsheet = <div className='welcome-cheatsheet'>
     <h1>Cheatsheets</h1>
@@ -44,7 +42,7 @@ const Cheatsheet = ({ cheatsheetId }) => {
 }
 
 Cheatsheet.propTypes = {
-  cheatsheetId: ReactPropTypes.string
+  cheatsheetId: PropTypes.string
 }
 
 export default Cheatsheet
