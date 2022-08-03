@@ -1,8 +1,77 @@
 .utility {
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 1em;
-    border-radius: 1em;
+    padding: 0.5em;
     margin: 1em;
+    margin-top: 5em;
+    border-radius: 1em;
     text-align: center;
+
+    width: calc(100% - 3em);
+    height: 82vh;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cheatsheet-selector {
+    border-radius: 1em;
+    width: calc(100% - 0.25em);
+    margin-bottom: 0.5em;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.653);
+    padding: 0.25em;
+}
+
+.cheatsheets-search {
+    border-radius: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 20em;
+    height: 1.5em;
+    border-style: none;
+
+}
+
+.avaible-cheatsheets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.avaible-cheatsheet-button {
+    min-width: 7em;
+    padding: 0.5em;
+    background-color: purple;
+    color: white;
+    border-radius: 1em;
+    margin: 0.25em;
+    transition: 0.3s;
+}
+
+.avaible-cheatsheet-button:hover {
+    background-color:  rgb(162, 0, 162);
+}
+
+.cheatsheet-container {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.653);
+    border-radius: 1em;
+    height: calc(100% - 100px - 1em);
+    padding: 0.5em;
+}
+
+@media only screen and (max-width: 900px) {
+    .cheatsheets-search {
+        width: calc(100% - 2em);
+    }
+    .cheatsheet-container {
+        width: calc(100% - 1em);
+    }
 }
