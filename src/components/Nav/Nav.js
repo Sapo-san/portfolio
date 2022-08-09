@@ -52,7 +52,7 @@ const Nav = () => {
                 }}>Home</NavLink>
                 <NavLink className="navLink" to="/about" onClick={() => {
                     setShowNavInMobile(false)
-                }}>About</NavLink>
+                }}>PWE</NavLink>
                 <NavLink className="navLink" to="/utility" onClick={() => {
                     setShowNavInMobile(false)
                 }}>Utility</NavLink>
