@@ -3,7 +3,7 @@ import './about.scss'
 
 const About = () => {
   return (
-    <div className='slide flex centered column'>
+    <div className='navslide flex centered column'>
       <div className='about flex centered column'>
         <div className='about-text'>
           <h1>Previous Working Experiences</h1>

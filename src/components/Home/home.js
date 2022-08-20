@@ -3,7 +3,7 @@ import './home.scss'
 
 const Home = () => {
   return (
-    <div className='slide flex centered column'>
+    <div className='navslide flex centered column'>
       <div className='home flex centered column'>
         <h1>Hello again!</h1>
         <p>I don&apos;t want to have this website just as my portfolio
