@@ -75,7 +75,7 @@ const Welcome = () => {
                 {getAge("07-04-1997")} years old, Chilean 🇨🇱, Fullstack Web Developer.
               </p>
               <p>
-                Currently looking for a job 👀
+                Currently employed at <a href="https://evoluciona.cl/">Evoluciona Chile</a> (since September 5th, 2022)
               </p>
             </div>
           </div>
