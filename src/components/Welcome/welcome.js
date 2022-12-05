@@ -1,6 +1,5 @@
 import React from 'react'
 import { useRef } from 'react'
-import getAge from 'get-age'
 import './welcome.scss'
 import timberli from '../../img/timberli.png'
 import videogamepi from '../../img/videogameapp.png'
@@ -11,6 +10,17 @@ import englishCv from '../../files/cv_en.pdf';
 const Welcome = () => {
 
   const PortfolioRef = useRef(null)
+
+  function getAge (dateString) {
+    var today = new Date()
+    var birthDate = new Date(dateString)
+    var age = today.getUTCFullYear() - birthDate.getUTCFullYear()
+    var month = today.getUTCMonth() - birthDate.getUTCMonth()
+    if (month < 0 || (month === 0 && today.getUTCDate() < birthDate.getUTCDate())) {
+      age--
+    }
+    return age
+  }
 
   return (
     <div className='welcome flex column centered'>
@@ -72,7 +82,7 @@ const Welcome = () => {
                 Cristóbal Herreros Viviani
               </p>
               <p>
-                {getAge("07-04-1997")} years old, Chilean 🇨🇱, Fullstack Web Developer.
+                {getAge("07/04/1997")} years old, Chilean 🇨🇱, Fullstack Web Developer.
               </p>
               <p>
                 Currently employed at <a href="https://evoluciona.cl/">Evoluciona Chile</a> (since September 5th, 2022)
