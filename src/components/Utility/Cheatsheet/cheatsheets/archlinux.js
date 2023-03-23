@@ -27,6 +27,8 @@ $ git clone <repo-link>
 $ cd <repo-folder>
 $ makepkg -si
 \`\`\`
+Note: \`pacman -Syu\` won't update installs from  Arch User repositories. You have to go to the cloned repo, pull it and then \`makepkg -si\` for it to install the lastest version avaible in the repo.
+
 ### --- Removing packages ---
 Remove package installed with \`pacman\`:
 \`\`\`bash
