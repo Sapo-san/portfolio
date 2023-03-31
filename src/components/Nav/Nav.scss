@@ -38,7 +38,7 @@
     font-size: 2em;
     padding: 0.2em;
 
-    background-color: rgb(72, 0, 72);
+    background-color: rgba(72, 0, 72, 0.432);
     
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -91,6 +91,16 @@
 
     .Navbar {
         justify-content: space-between;
+    }
+
+    .navlink-container {
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .navLink {
+        width: 100%;
     }
 
     .navlink-container:last-child {

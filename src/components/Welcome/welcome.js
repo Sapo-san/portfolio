@@ -27,7 +27,7 @@ const Welcome = () => {
   }
 
   return (
-    <div className='welcome flex column centered'>
+    <div className='welcome flex column'>
       {/* Pantalla de bienvenida */}
       <div className='slide flex column centered'>
         <h1 className='welcome-title'>Welcome to my Website</h1>
@@ -82,6 +82,7 @@ const Welcome = () => {
         </div>
 
         {/* Sobre Mi */}
+        
         <div className='portfolio-section container flex column'>
           <h1 className='portfolio-title'>About me:</h1>
 
@@ -126,6 +127,9 @@ const Welcome = () => {
             <br/>
             ➜ You can send me an email: <a href="mailto:cristobal.herreros@gmail.com">cristobal.herreros@gmail.com</a>
           </p>
+        </div>
+        <div className='bottom'>
+          .
         </div>
       </div>
       

@@ -55,4 +55,3 @@ $ sudo -u <user> postgres createdb <database name>
 --- 
 Useful links: 
 - [Digital Ocean | Cómo instalar y utilizar PostgreSQL en Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04-es)
-`

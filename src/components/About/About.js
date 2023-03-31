@@ -6,7 +6,8 @@ const About = () => {
     <div className='navslide flex centered column'>
       <div className='about flex centered column'>
         <div className='about-text'>
-          <h1 className='about-title'>Previous Working Experiences</h1>
+          <h1 className='about-title'>About me</h1>
+          <h2 className='about-title'>Previous Working Experiences</h2>
           <p>
             In this section I talk about my previous working experiences and other stuff that might be relevant.
           </p>

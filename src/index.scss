@@ -1,8 +1,10 @@
 html {
-  scroll-behavior: smooth;
+  position: fixed;
+  width: 100vw;
 }
 
 body {
+
   background-color: black;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
