@@ -31,9 +31,10 @@ button {
   background-color: purple;
   padding: 0.5em;
   font-size: 1.2em;
-  font-weight: bold;
   border-style: none;
   border-radius: 1em;
+
+  min-width: 7em;
 
   transition: 0.3s;
 }

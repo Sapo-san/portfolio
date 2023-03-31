@@ -1,5 +1,7 @@
 import React from 'react'
 import { useRef } from 'react'
+import { useNavigate } from "react-router-dom";
+
 import './welcome.scss'
 import timberli from '../../img/timberli.png'
 import videogamepi from '../../img/videogameapp.png'
@@ -10,6 +12,8 @@ import englishCv from '../../files/cv_en.pdf';
 const Welcome = () => {
 
   const PortfolioRef = useRef(null)
+
+  const navigate = useNavigate();
 
   function getAge (dateString) {
     var today = new Date()
@@ -31,9 +35,15 @@ const Welcome = () => {
         <h2 className='welcome-subtitle'>How can I help you?</h2>
 
         <div className='welcome-buttons'>
-          <button onClick={() => PortfolioRef.current.scrollIntoView()}>Check Portfolio</button>
-          <a className="welcome-link" href={englishCv} download="CV Cristobal Herreros">Download Resume</a>
-          <Link className="welcome-link" to="/home">Other</Link>
+          <button onClick={() => PortfolioRef.current.scrollIntoView()}> Check Portfolio </button>
+          <button onClick={() => {
+            // Descargar PDF
+            const link = document.createElement('a');
+            link.href = englishCv;
+            link.setAttribute('download', `CV Cristóbal Herreros.pdf`);
+            link.click()
+          }}> Download Resume </button>
+          <button onClick={() => navigate("/home")}> Other Stuff </button>
         </div>
       </div>
 
@@ -85,7 +95,7 @@ const Welcome = () => {
                 {getAge("07/04/1997")} years old, Chilean 🇨🇱, Fullstack Web Developer.
               </p>
               <p>
-                Currently employed at <a href="https://evoluciona.cl/">Evoluciona Chile</a> (since September 5th, 2022)
+                Currently employed at <a href="https://evoluciona.cl/">Evoluciona Chile</a> (since September 5th, 2022) working as external employee for <a href="https://www.linkedin.com/company/entel/">Entel</a> 
               </p>
             </div>
           </div>
@@ -95,7 +105,7 @@ const Welcome = () => {
             and everything related to them. 
             <br/>
             <br/>
-            Previous experiences? I&apos;ve done a bit of freelancing here and there (click on &quot;Read more&quot; below to see a complete list), 
+            Previous experiences? Before my current job I did a bit of freelancing here and there (click on &quot;Read more&quot; below to see a complete list), 
             also I was teaching assistant for the Computer&apos;s Architecture course back in university.
           </p>
           <p className='aboutme-p2'>
@@ -103,8 +113,8 @@ const Welcome = () => {
           </p>
 
           <ul>
-            <li>Programming Languages: Javascript, Python, SQL</li>
-            <li>Libraries / Frameworks: React.js, Redux, Node.js, Express.js, Sequelize</li>
+            <li>Programming Languages: Java (Using it at my current job for backend), Javascript, Python, SQL (Postgres and MySQL)</li>
+            <li>Libraries / Frameworks: Vue2 (Using it at my current job for frontend), Vue3, React.js, Redux, Node.js, Express.js, Sequelize</li>
             <li>Agile Methodologies: Scrum, Kanban</li>
           </ul>
 
