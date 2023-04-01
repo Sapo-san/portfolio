@@ -48,7 +48,7 @@ const Welcome = () => {
       </div>
 
       {/* Portfolio */}
-      <div ref={PortfolioRef} className='portfolio slide flex row'>
+      <div ref={PortfolioRef} className='portfolio slide flex'>
         {/* Projectos */}
         <div className='container flex column portfolio-section'>
           <h1 className='portfolio-title'>Projects:</h1>
