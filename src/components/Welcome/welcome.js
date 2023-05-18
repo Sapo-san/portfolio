@@ -55,17 +55,6 @@ const Welcome = () => {
           <p>
             These are my finished projects:
           </p>
-            {/* Project #1 */}
-            <div className='project flex row centered'>
-              <img className="project-img" src={timberli} alt="timberli-img"></img>
-              <div className="project-txt">
-                <p><b>Timberli - Henry Bootcamp Group Project:</b> Timberli is an app where Jr developers
-                can upload their projects to build their portfolio, be more visible to recruiters and
-                also receive feedback on their projects. Our team worked on Timberli for a
-                month. <a href="https://proyecto-final-orcin-seven.vercel.app/">Check it out, since its already deployed.</a></p>
-              </div>
-            </div>
-
             {/* Project #2 */}
             <div className="project flex row centered">
               <div className="project-txt">
@@ -76,8 +65,18 @@ const Welcome = () => {
               </div>
               <img className="project-img" src={videogamepi} alt="timberli-img"></img>  
             </div>
+            {/* Project #1 */}
+            <div className='project flex row centered'>
+              <img className="project-img" src={timberli} alt="timberli-img"></img>
+              <div className="project-txt">
+                <p><b>Timberli - Henry Bootcamp Group Project:</b> Timberli is an app where Jr developers
+                can upload their projects to build their portfolio, be more visible to recruiters and
+                also receive feedback on their projects. Our team worked on Timberli for a
+                month. <a href="https://proyecto-final-orcin-seven.vercel.app/">Check it out, since its already deployed.</a></p>
+              </div>
+            </div>
           <p>
-          If you want to see other projects I&apos;m currently working on, you can check out my <a href="https://github.com/Sapo-san">Github account</a>.
+          If you want to see other projects I&apos;m currently working on (but at a slow pace, since I&apos;m a fulltime employee), you can check out my <a href="https://github.com/Sapo-san">Github account</a>.
           </p>
         </div>
 
@@ -89,7 +88,7 @@ const Welcome = () => {
           <div className='flex row centered profile'>
             <img className='profilepic' src={profilepic} alt="profilepic"></img>
             <div className='profile-text'>
-              <p>
+              <p className='profile-name'>
                 Cristóbal Herreros Viviani
               </p>
               <p>
@@ -110,14 +109,13 @@ const Welcome = () => {
             also I was teaching assistant for the Computer&apos;s Architecture course back in university.
           </p>
           <p className='aboutme-p2'>
-          My current Tech Stack is:
-          </p>
-
+          <h2>My current Tech Stack is:</h2>
           <ul>
-            <li>Programming Languages: Java (Using it at my current job for backend), Javascript, Python, SQL (Postgres and MySQL)</li>
-            <li>Libraries / Frameworks: Vue2 (Using it at my current job for frontend), Vue3, React.js, Redux, Node.js, Express.js, Sequelize</li>
+            <li>Programming Languages: <b>Java & Javascript</b> (Using both at my current job), Python, SQL (Postgres and MySQL)</li>
+            <li>Libraries / Frameworks: <b>Vue2 & Java Springboot</b> (Using both at my current job), Vue3, React.js, Redux, Node.js, Express.js, Sequelize</li>
             <li>Agile Methodologies: Scrum, Kanban</li>
           </ul>
+          </p>
 
           <Link className="welcome-link readMoreButton" to="/about">Read More</Link>
 

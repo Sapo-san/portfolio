@@ -126,9 +126,16 @@
     width: 25%;
 }
 
+.profile-name {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 2.3rem;
+}
+
 .profile-text {
-    padding: 1em;
-    width: 70%;
+    padding: 0.3em;
+    width: 100%;
     text-align: left;
 }
 
@@ -144,10 +151,15 @@
 
 .aboutme-p1 {
     font-size: 1.4em;
+    padding: 0.3em;
+    text-align: left;
+    word-wrap: normal;
 }
 
 .aboutme-p2 {
-    font-size: 1.3em;
+    font-size: 1.1em;
+    padding: 0.3em;
+    text-align: left;
 }
 
 @media only screen and (max-width: 900px) {
