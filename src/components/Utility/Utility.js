@@ -9,6 +9,8 @@ const Utility = () => {
     "ArchLinux",
     "Docker",
     "Postgres",
+    "PythonVenv",
+    "FrontendTips"
   ]
 
   const [currentCheatsheet, setCurrentCheatsheet] = useState("none")

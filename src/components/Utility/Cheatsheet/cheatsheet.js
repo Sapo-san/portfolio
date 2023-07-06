@@ -6,6 +6,9 @@ import { marked } from 'marked'
 import Postgres from './cheatsheets/postgres.md'
 import Docker from './cheatsheets/docker.md'
 import ArchLinux from './cheatsheets/archlinux.md'
+import PythonVenv from './cheatsheets/python-venv.md'
+import FrontendTips from './cheatsheets/frontend-tips-tricks.md'
+
 
 /*
   Funciones
@@ -34,8 +37,10 @@ const Loading = <div className='welcome-cheatsheet'>
 const Cheatsheet = ({ cheatsheetId }) => {
 
   const cheatsheets = {
-    ArchLinux: ArchLinux,
+    FrontendTips: FrontendTips,
     Docker: Docker,
+    PythonVenv: PythonVenv,
+    ArchLinux: ArchLinux,
     Postgres: Postgres
   }
 
