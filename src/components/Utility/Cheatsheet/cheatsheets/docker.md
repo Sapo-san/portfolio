@@ -1,8 +1,8 @@
 # Docker & Compose personal notes & cheatsheet 
 
-I wrote this little guide while using Docker with WSL2 in my windows machine. Will add more stuff in the future. 
+I wrote this little guide while using Docker with WSL2 in my windows machine.
 
-This is a cheatsheet for common commands and stuff, a basic understanding of docker is required. Visit [this repository](https://github.com/daleal/docker-walkthrough) (made by a senior of mine from uni) or search for more tutorials.
+This is a cheatsheet for common commands and stuff, a basic understanding of docker is required. Visit [this repository](https://github.com/daleal/docker-walkthrough) (made by a senior of mine from uni) or search in google/youtube for more tutorials.
 
 (17th August, 2023) I'm also using it right now at work for a "new" application at work so this going to get updates more frequently.
 
@@ -21,7 +21,7 @@ If using docker while developing (_multistage workflow cough cough_), make sure 
 ### Using docker in Windows
 **Avoid headaches** and install docker desktop and Windows Subsystem For Linux (Ideally version 2).
 
-Also, **place the containerized repositories  in the WSL2 filesystem, not in Windows filesystem**, especially if you will code/develop using a volume to map the code into the container. If you place the repo in the windows filesystem, things like Hot Reload will **NOT** work because WSL2 doesn't have access to the windows filesystem. (Simplified explanation, it goes deeper than that)
+Also, **place the containerized repositories  in the WSL2 filesystem, not in Windows filesystem**. This should solve most issues, particularly if you attempt to code/develop using a volume to map the code into the container (read next section)
 
 ### About mapping code into a container
 This implementation will vary depending on the language/framework (I usually do this with Node.js) but it goes more or less like this:
@@ -31,6 +31,8 @@ When using `docker build`, the dockerfile should order docker to do the followin
 2. Create a volume that maps repository code to image code, so whenever the container is created, if you modify the code it will be modified in the container too.
 
 Note: if you notice any discrepancies between code and container OR‌ you take down the container, make sure to build the image again with the lastest changes before upping the container again.
+
+**IMPORTANT**: If you place the repo in the windows filesystem, things like Hot Reload will **NOT** work because WSL2 doesn't have access to the windows filesystem. (Simplified explanation, it goes deeper than that)
 
 ## - Docker - (Commands)
 
@@ -65,7 +67,11 @@ $ docker run -d -p <PORT-EXT>:<PORT-INT> -v "<PATH-EXT>:<PATH-INT>:ro" --name <c
 
 - ```PORT-EXT``` specifies the External Port for data traffic. ```PORT-INT``` specifies Internal Port.
 
-- ```-v``` is also optional. Its used to create volumes and sync files inside and outside the container (data persistence). Files inside the container path ```PATH-INT``` will be synced with the files outside the container in path ```PATH-EXT```. NOTE: the ```:ro``` after ```PATH-INT``` tells the container that the files in the volume are read-only. If omitted, the container can modify files outside the container. _Wrap the value between double quotes if its not recognizing the paths_.
+- ```-v``` is also optional. Its used to create volumes and sync files inside and outside the container (data persistence). Files inside the container path ```PATH-INT``` will be synced with the files outside the container in path ```PATH-EXT```.
+
+    NOTE: the ```:ro``` after ```PATH-INT``` tells the container that the files in the volume are read-only. If omitted, the container can modify files outside the container.
+
+    _Wrap the value between double quotes if its not recognizing the paths_.
 
 - To pass enviroment variables into the container, use flag ```-e <VARNAME>=<VALUE>```. If there are too many variables, you can specify an ```.env``` instead using ```--env-file <PATH-TO-ENV>```. Also, **don't forget to add the ```.env``` to the ```.dockerignore``` file**.
 

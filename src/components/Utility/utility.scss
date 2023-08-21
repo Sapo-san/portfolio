@@ -49,12 +49,12 @@
     align-items: center;
     white-space: nowrap;
     flex-wrap: nowrap;
-    width: 100%;
+    width: calc(10.5em * 6);
     
 }
 
 .avaible-cheatsheet-button {
-    min-width: 7em;
+    min-width: 9em;
     padding: 0.5em;
     background-color: purple;
     color: white;
@@ -80,10 +80,6 @@
 @media only screen and (max-width: 900px) {
     .cheatsheet-selector {
         width: calc(100% - 0.25em);
-    }
-    
-    .avaible-cheatsheets {
-        width: calc(100% + 3em);
     }
 
     .cheatsheets-search {

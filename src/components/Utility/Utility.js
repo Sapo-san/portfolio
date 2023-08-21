@@ -3,37 +3,73 @@ import './utility.scss'
 
 import Cheatsheet from './Cheatsheet/cheatsheet'
 
+/*
+  Constantes
+*/
+const avaibleCheatsheets = [
+  "ArchLinux",
+  "Docker",
+  "Postgres",
+  "PythonVenv",
+  "FrontendTips",
+  "GoogleCloudSDK"
+]
+
+
+/*
+  Componente
+*/
 const Utility = () => {
 
-  const avaibleCheatsheets = [
-    "ArchLinux",
-    "Docker",
-    "Postgres",
-    "PythonVenv",
-    "FrontendTips",
-    "GoogleCloudSDK"
-  ]
+  /*
+    Funciones del componente
+  */
+  function filterCheatsheetByTextInput(text, cheatsheets) {
+    let filtered = cheatsheets.filter((cs) => {
+      if (cs.toLowerCase().includes(text.toLowerCase())) {
+        return true
+      }
+      return false
+    })
 
+    if (!text) {
+      return cheatsheets
+    }
+    
+    return filtered
+  }
+
+  function returnCheatSheetButtons(listOfCheatsheets) {
+    return listOfCheatsheets.map((ac => {
+      return <div
+      key={ac}
+      className="avaible-cheatsheet-button"
+      onClick={(e) => {
+        setCurrentCheatsheet(e.target.innerText)
+      }}>
+        {ac}
+      </div>
+    }))}
+
+  const [searchInput, setSearchInput] = useState("")
   const [currentCheatsheet, setCurrentCheatsheet] = useState("none")
 
   return (
     <div className='navslide flex centered column'>
       <div className='utility flex column'>
         <div className='cheatsheet-selector'>
-          {/* Cheatsheet selector */}
-          <input className="cheatsheets-search" type="text" placeholder='🔎 Search Not functional yet'></input>
+          {/* Cheatsheet finder */}
+          <input
+            className="cheatsheets-search"
+            type="text" placeholder='🔎 Search for a cheatsheet'
+            onChange={(e) => setSearchInput(e.target.value)}
+            >
+          </input>
+          
+          {/* Cheatsheet buttons */}
           <div className='avaible-cheatsheets-container'>
             <div className='avaible-cheatsheets'>
-              {avaibleCheatsheets.map((ac => {
-                return <div
-                key={ac}
-                className="avaible-cheatsheet-button"
-                onClick={(e) => {
-                  setCurrentCheatsheet(e.target.innerText)
-                }}>
-                  {ac}
-                </div>
-              }))}
+              {returnCheatSheetButtons(filterCheatsheetByTextInput(searchInput, avaibleCheatsheets))}
             </div>
           </div> 
         </div>
