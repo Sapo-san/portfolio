@@ -8,6 +8,7 @@ import Docker from './cheatsheets/docker.md'
 import ArchLinux from './cheatsheets/archlinux.md'
 import PythonVenv from './cheatsheets/python-venv.md'
 import FrontendTips from './cheatsheets/frontend-tips-tricks.md'
+import GoogleCloudSDK from './cheatsheets/google-cloud-sdk.md'
 
 
 /*
@@ -41,7 +42,8 @@ const Cheatsheet = ({ cheatsheetId }) => {
     Docker: Docker,
     PythonVenv: PythonVenv,
     ArchLinux: ArchLinux,
-    Postgres: Postgres
+    Postgres: Postgres,
+    GoogleCloudSDK: GoogleCloudSDK
   }
 
   const [isLoading, setIsLoading] = useState(false);

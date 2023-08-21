@@ -10,7 +10,8 @@ const Utility = () => {
     "Docker",
     "Postgres",
     "PythonVenv",
-    "FrontendTips"
+    "FrontendTips",
+    "GoogleCloudSDK"
   ]
 
   const [currentCheatsheet, setCurrentCheatsheet] = useState("none")

@@ -24,7 +24,7 @@ If using docker while developing (_multistage workflow cough cough_), make sure 
 Also, **place the containerized repositories  in the WSL2 filesystem, not in Windows filesystem**, especially if you will code/develop using a volume to map the code into the container. If you place the repo in the windows filesystem, things like Hot Reload will **NOT** work because WSL2 doesn't have access to the windows filesystem. (Simplified explanation, it goes deeper than that)
 
 ### About mapping code into a container
-The implementation of this will vary depending on the language/framework (I usually do this with Node.js) but it goes more or less like this
+This implementation will vary depending on the language/framework (I usually do this with Node.js) but it goes more or less like this:
 
 When using `docker build`, the dockerfile should order docker to do the following:
 1. Copy repository code into image and install it's dependencies
