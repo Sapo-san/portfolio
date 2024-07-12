@@ -1,4 +1,19 @@
-# My portfolio app
+# Portfolio | cristobalherreros.info
 
-Start it in dev mode
-```npm start``` 
+Originally created with `create-react-app`, now migrated to `vite`.
+
+## Seting up
+Install Dependencies:
+```bash
+npm i
+```
+
+Run (dev mode):
+```bash
+npm run dev
+```
+
+Build for production:
+```bash
+npm run build
+```
