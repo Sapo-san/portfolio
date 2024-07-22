@@ -17,7 +17,7 @@ const About = () => {
           <h2>Behold! My previous freelancing experience:</h2>
           <ul className='about-pwe-list'>
             <li>
-              <b><a href="https://www.cirugiadelaobesidad.cl">cirugiadelaobesidad.cl</a> [November 2023 - April 2024]</b>: Vue + Express combo. Deployed on AWS with S3 & Cloudfront.
+              <b><a href="https://cirugiadelaobesidad.cl">cirugiadelaobesidad.cl</a> [November 2023 - April 2024]</b>: Vue + Express combo. Deployed on AWS with S3 & Cloudfront.
             </li>
             <li>
               <b><a href="https://www.vlabogadas.cl">vlabogadas.cl</a> [August 2022 - Current Day]</b>: React + Express combo. Deployed on AWS. A complete redesign of the site is pending 👀
