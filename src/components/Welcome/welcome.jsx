@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import './welcome.scss'
 
-import profilepic from '../../img/profilepic.png'
+import profilepic from '../../img/profilepic.jpg'
 import { Link } from 'react-router-dom'
 import englishCv from '../../files/cv_en.pdf';
 
