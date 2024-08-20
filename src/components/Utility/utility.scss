@@ -18,13 +18,14 @@
     border-radius: 1em;
     width: 60%;
     margin-bottom: 0.5em;
+    
     height: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.653);
-    padding: 0.25em;
+    padding-top: 0.5em;
 }
 
 .cheatsheets-search {
@@ -41,25 +42,27 @@
     overflow-y: hidden;
     overflow-x: auto;
     width: 100%;
+    //outline: 2px solid red
 }
 .avaible-cheatsheets {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     white-space: nowrap;
     flex-wrap: nowrap;
-    width: calc(10.5em * 6);
+
+    //outline: 2px solid green
     
 }
 
 .avaible-cheatsheet-button {
     min-width: 9em;
-    padding: 0.5em;
+    padding: 0.5em 0 0.5em 0;
     background-color: purple;
     color: white;
     border-radius: 1em;
-    margin: 0.25em;
+    margin: 0 0.25em 0 0.25em;
     transition: 0.3s;
     margin-bottom: 1em;
     

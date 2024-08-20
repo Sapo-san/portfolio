@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 import './cheatsheet.scss'
 import { marked } from 'marked'
@@ -9,6 +9,7 @@ import ArchLinux from './cheatsheets/archlinux.md'
 import PythonVenv from './cheatsheets/python-venv.md'
 import FrontendTips from './cheatsheets/frontend-tips-tricks.md'
 import GoogleCloudSDK from './cheatsheets/google-cloud-sdk.md'
+import ApacheTomcatSSL from './cheatsheets/apache-tomcat-ssl.md'
 
 
 /*
@@ -43,7 +44,8 @@ const Cheatsheet = ({ cheatsheetId }) => {
     PythonVenv: PythonVenv,
     ArchLinux: ArchLinux,
     Postgres: Postgres,
-    GoogleCloudSDK: GoogleCloudSDK
+    GoogleCloudSDK: GoogleCloudSDK,
+    ApacheTomcatSSL: ApacheTomcatSSL
   }
 
   const [isLoading, setIsLoading] = useState(false);

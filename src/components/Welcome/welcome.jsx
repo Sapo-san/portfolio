@@ -100,8 +100,7 @@ const Welcome = () => {
               </p>
 
               <p className='aboutme-p1'>
-                I&apos;m also into fencing (both ⚔️ HEMA
-                longsword and lightsaber fencing) and I really like 🖥️ computers
+                I&apos;m also into fencing (⚔️ HEMA, Olympic and with lightsabers) and I really like 🖥️ computers
                 and everything related to them.
               </p>
               
