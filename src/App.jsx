@@ -10,7 +10,6 @@ import Home from "./components/Home/home";
 import Nav from "./components/Nav/Nav";
 
 import "./App.scss"
-import About from "./components/About/About";
 import Utility from "./components/Utility/Utility";
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
         <Routes>
           <Route exact path='/' element={ <Welcome/> }/>
           <Route exact path='/home' element={ <Home/> }/>
-          <Route exact path='/about' element={ <About/> }/>
           <Route exact path='/utility' element={ <Utility/> }/>
         </Routes>
       </BrowserRouter>

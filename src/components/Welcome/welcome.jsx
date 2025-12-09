@@ -30,7 +30,7 @@ const Welcome = () => {
       {/* Pantalla de bienvenida */}
       <div className='slide flex column centered'>
         <h1 className='welcome-title'>Welcome to my Website</h1>
-        <h2 className='welcome-subtitle'>I am Cristóbal, Fullstack Web Developer 🚀</h2>
+        <h2 className='welcome-subtitle'>I&apos;m Cristóbal, Fullstack Web Developer 🚀</h2>
         <h2 className='welcome-subtitle'>How can I help you?</h2>
 
         <div className='welcome-buttons'>
@@ -74,13 +74,15 @@ const Welcome = () => {
 
               {/* Me talking about myself */}
               <p className='aboutme-p1'>
-                Hello there! In this section I&apos;ll talk a bit about myself.
-                For starters, I&apos;m {getAge("07/04/1997")} years old and I come
-                from Chile 🇨🇱
+                Hello there! I&apos;m {getAge("07/04/1997")} years old and from Chile 🇨🇱. I&apos;m a dedicated worker,
+                I like challenges and learning new things.
               </p>
+
               <p className='aboutme-p1'>
-                I&apos;m currently working at
-                <a href="https://www.linkedin.com/company/entel/"> Entel </a>
+                <b>
+                  I&apos;m currently working at
+                  <a href="https://www.linkedin.com/company/entel/"> Entel </a>
+                </b>
                 (since April 22nd, 2024) as an internal collaborator and Developer.
               </p>
 
@@ -95,44 +97,53 @@ const Welcome = () => {
               </p>
 
               <p className='aboutme-p1'>
-                Some personal stuff about me is that I really like frogs 🐸, reading
-                books 📚 and playing 🎮 videogames. 
-              </p>
-
-              <p className='aboutme-p1'>
-                I&apos;m also into fencing (⚔️ HEMA, Olympic and with lightsabers) and I really like 🖥️ computers
-                and everything related to them.
-              </p>
-              
-              <p className='aboutme-p1'>
-                Previous working experiences? Before my current job I worked for 
+                <b>Previous working experiences?</b> Before my current job I worked for 
                 <a href="https://evoluciona.cl/"> Evoluciona Chile </a> for a year
                 and a half as Software Engineer and before that I did a bit of freelancing here and
-                there (click on &quot;Read more&quot; below to see a not-that-long-but-complete list of things).
+                there.
               </p>
 
               <p className='aboutme-p1'>
-                Also, I was part of the teaching assistant team for the Computer&apos;s Architecture
-                course back in university. 
+                <b>About me?</b> Unsurprisingly, I <i>really</i> like 🖥️ computers
+                and everything related to them, kind of the reason why I got into this line
+                of work hehe. I also really like frogs 🐸.
               </p>
+
+              <p className='aboutme-p1'>
+                Some of my hobbies are reading books 📚 and playing 🎮 videogames (recently a lot 
+                of <a href='https://www.youtube.com/watch?v=qiD5VStVH9k'>Helldivers 2</a>). I&apos;m 
+                also into fencing, mainly ⚔️ HEMA with Longswords but I'll dabble with other kind of swords
+                or Olympic/lightsaber fencing too. 
+              </p>
+
+              <p className='aboutme-p1'>
+                I'm also a big advocate for mental health awareness and having proper work-life balance.
+                I've been learning a lot about these topics thanks to 
+                the <a href='https://www.healthygamer.gg/'>
+                  HealthyGamer foundation
+                </a> and <a href='https://www.youtube.com/@HealthyGamerGG'>
+                  Dr. K's YouTube channel
+                </a>, so if you are interested on these topics I highly recommend to check out their resources.
+              </p>
+              
+              
             </div>
           </div>
           
           <p className='aboutme-p2'>
             <h2>My Tech Stack is:</h2>
               <ul>
-                <li>Javascript, Python, Php, Java, SQL (Postgres and MySQL)</li>
-                <li>Vue 3, Vue 2, Java Springboot, React, Redux, Node.js, Express.js, Sequelize</li>
+                <li>Javascript, Python, Php, Java, SQL (BigQuery, Postgres and MySQL)</li>
+                <li>Vue, React, Node.js, Express.js, Sequelize, Java Springboot</li>
                 <li>Google Cloud: Compute Engine, Cloud Functions, Big Query, Cloud Storage, Looker Studio, Google DNS, Cloud Scheduler...</li>
-                <li>Amazon Web Services: EC2, S3, Route 53, Amazon Cloudfront.</li>
+                <li>Amazon Web Services: EC2, S3, Route 53, Amazon Cloudfront...</li>
                 <li>Scrum, Kanban using Jira</li>
-                <li>Other tools: Git, Cloud Console, etc...</li>
+                <li>Dev tools: Git, Cloud Console, etc...</li>
+                <li>AI tools: Whoever hallucinates less at the moment (ChatGPT, Gemini, etc...)</li>
               </ul>
           </p>
 
-          <Link className="welcome-link readMoreButton" to="/about">Read More</Link>
-
-          <h1 className='portfolio-title'>Want to contact me?</h1>
+          <h1 className='portfolio-title'>If you want to contact me...</h1>
           <p>
             ➜ You can send me a message on <a href="https://www.linkedin.com/in/cristobalherreros/">LinkedIn</a>
             <br/>

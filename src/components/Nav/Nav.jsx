@@ -47,12 +47,11 @@ const Nav = () => {
                 <NavLink className="navLink" to="/" onClick={() => {
                     setShowNavInMobile(false)
                 }}>Welcome</NavLink>
+                
                 <NavLink className="navLink" to="/home" onClick={() => {
                     setShowNavInMobile(false)
                 }}>Home</NavLink>
-                <NavLink className="navLink" to="/about" onClick={() => {
-                    setShowNavInMobile(false)
-                }}>About</NavLink>
+                
                 <NavLink className="navLink" to="/utility" onClick={() => {
                     setShowNavInMobile(false)
                 }}>Utility</NavLink>
