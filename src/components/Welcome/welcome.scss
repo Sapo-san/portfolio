@@ -152,6 +152,27 @@
     text-align: center;
 }
 
+.profile-socials {
+    width: 100%;
+    margin: .5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    font-size: 3em;
+    color: rgb(201, 201, 201)
+}
+
+.profile-socials .icon {
+    transition: color 200ms ease-in-out;
+}
+
+.profile-socials .icon:hover {
+    color: white
+}
+
+
 .profile-text {
     padding: 0.3em;
     width: 100%;
@@ -174,6 +195,10 @@
     text-align: left;
     word-wrap: normal;
 
+}
+
+.button-container {
+    text-align: center;
 }
 
 .aboutme-p2 {

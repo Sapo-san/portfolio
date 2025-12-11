@@ -33,10 +33,6 @@ Remove package installed (and all of the installed dependencies that were instal
 ```bash
 $ sudo pacman -Rns <package_name> <package_name> ...
 ```
-Remove package installed from SnapStore:
-```bash
-$ sudo snap remove <app-name>
-```
 
 ## Debugging stuff
 If asking in Arch Forums, the community **WILL** ask you to post info/logs. They will normally suggest commands for the specific issue to check, so this section is just for general purposes instead.

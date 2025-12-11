@@ -4,12 +4,14 @@ import { useNavigate } from "react-router-dom";
 
 import './welcome.scss'
 
-import profilepic from '../../img/profilepic.jpg'
+import profilepic from '../../img/profilepic.webp'
 import { Link } from 'react-router-dom'
 import englishCv from '../../files/cv_en.pdf';
 
-const Welcome = () => {
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
 
+const Welcome = () => {
   const PortfolioRef = useRef(null)
 
   const navigate = useNavigate();
@@ -23,6 +25,10 @@ const Welcome = () => {
       age--
     }
     return age
+  }
+
+  function openInNewTab(url) {
+    window.open(url, '_blank').focus();
   }
 
   return (
@@ -72,6 +78,14 @@ const Welcome = () => {
                 (basically jack of all trades, master of none)
               </p>
 
+              {/* Network Icons */}
+
+              <div className="profile-socials">
+                <FaLinkedin className='icon' onClick={() => openInNewTab('https://www.linkedin.com/in/cristobalherreros/')}/> 
+                <FaGithub className='icon' onClick={() => openInNewTab('https://github.com/Sapo-san')}/>
+                <IoMailOutline className='icon' onClick={() => window.open('mailto:cristobal.herreros@gmail.com')} />
+              </div>
+
               {/* Me talking about myself */}
               <p className='aboutme-p1'>
                 Hello there! I&apos;m {getAge("07/04/1997")} years old and from Chile 🇨🇱. I&apos;m a dedicated worker,
@@ -100,8 +114,19 @@ const Welcome = () => {
                 <b>Previous working experiences?</b> Before my current job I worked for 
                 <a href="https://evoluciona.cl/"> Evoluciona Chile </a> for a year
                 and a half as Software Engineer and before that I did a bit of freelancing here and
-                there.
+                there. You can download my CV by pressing the button below.
               </p>
+
+              <div className='button-container'>
+                <button onClick={() => {
+                  // Descargar PDF
+                  const link = document.createElement('a');
+                  link.href = englishCv;
+                  link.setAttribute('download', `CV Cristóbal Herreros.pdf`);
+                  link.click()
+                }}> Download Resume </button>
+              </div>
+              
 
               <p className='aboutme-p1'>
                 <b>About me?</b> Unsurprisingly, I <i>really</i> like 🖥️ computers
@@ -110,7 +135,7 @@ const Welcome = () => {
               </p>
 
               <p className='aboutme-p1'>
-                Some of my hobbies are reading books 📚 and playing 🎮 videogames (recently a lot 
+                Some of my hobbies are reading fantasy/fiction books 📚 and playing 🎮 videogames (recently a lot 
                 of <a href='https://www.youtube.com/watch?v=qiD5VStVH9k'>Helldivers 2</a>). I&apos;m 
                 also into fencing, mainly ⚔️ HEMA with Longswords but I'll dabble with other kind of swords
                 or Olympic/lightsaber fencing too. 
@@ -118,19 +143,16 @@ const Welcome = () => {
 
               <p className='aboutme-p1'>
                 I'm also a big advocate for mental health awareness and having proper work-life balance.
-                I've been learning a lot about these topics thanks to 
-                the <a href='https://www.healthygamer.gg/'>
-                  HealthyGamer foundation
-                </a> and <a href='https://www.youtube.com/@HealthyGamerGG'>
+                I've been learning a lot about these topics thanks to <a href='https://www.youtube.com/@HealthyGamerGG'>
                   Dr. K's YouTube channel
-                </a>, so if you are interested on these topics I highly recommend to check out their resources.
+                </a> and the <a href='https://www.healthygamer.gg/'>
+                  HealthyGamer foundation
+                </a> so if you are interested on these topics I highly recommend to check out their resources.
               </p>
-              
-              
             </div>
           </div>
           
-          <p className='aboutme-p2'>
+          {/* <p className='aboutme-p2'>
             <h2>My Tech Stack is:</h2>
               <ul>
                 <li>Javascript, Python, Php, Java, SQL (BigQuery, Postgres and MySQL)</li>
@@ -141,13 +163,11 @@ const Welcome = () => {
                 <li>Dev tools: Git, Cloud Console, etc...</li>
                 <li>AI tools: Whoever hallucinates less at the moment (ChatGPT, Gemini, etc...)</li>
               </ul>
-          </p>
+          </p> */}
 
-          <h1 className='portfolio-title'>If you want to contact me...</h1>
-          <p>
-            ➜ You can send me a message on <a href="https://www.linkedin.com/in/cristobalherreros/">LinkedIn</a>
-            <br/>
-            ➜ You can send me an email: <a href="mailto:cristobal.herreros@gmail.com">cristobal.herreros@gmail.com</a>
+          <h1 className='portfolio-title'>Contact info:</h1>
+          <p className='aboutme-p1'>
+            You can send me a message on <a href="https://www.linkedin.com/in/cristobalherreros/">LinkedIn</a> or write me an email to: <a href="mailto:cristobal.herreros@gmail.com">cristobal.herreros@gmail.com</a>
           </p>
         </div>
         <div className='bottom'>

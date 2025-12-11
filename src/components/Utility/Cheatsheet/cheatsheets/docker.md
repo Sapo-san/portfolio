@@ -4,8 +4,6 @@ I wrote this little guide while using Docker with WSL2 in my windows machine.
 
 This is a cheatsheet for common commands and stuff, a basic understanding of docker is required. Visit [this repository](https://github.com/daleal/docker-walkthrough) (made by a senior of mine from uni) or search in google/youtube for more tutorials.
 
-(17th August, 2023) I'm also using it right now at work for a "new" application at work so this going to get updates more frequently.
-
 ## Important links
 - [Docker Docs](https://docs.docker.com/)
 - [Docker Hub | Search for images](https://hub.docker.com/search?q=)
