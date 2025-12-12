@@ -11,53 +11,19 @@ const Nav = () => {
 
     const location = useLocation()
 
-    useEffect(() => {
-        
-        if (showNavInMobile) {
-            setNavLinkContainerClass('navlink-container')
-            setNavbarClass('navbar flex row centered fullOpacity')
-
-        } else {
-            setNavLinkContainerClass('navlink-container hide')
-            setNavbarClass('navbar flex row centered')
-
-        }
-
-    }, [showNavInMobile])
-    
-
-
     if (location.pathname === '/') {
         return null;
     }
 
     return (
-        <nav className={navbarClass}>
-            <div className="burger-container" >
-                <div className='burger-limit' onClick={() => {
-                setShowNavInMobile(!showNavInMobile)
-                 }}>
-                    <div className='burger-line'></div>
-                    <div className='burger-line'></div>
-                    <div className='burger-line'></div>
-                </div>
-            </div>
-
-            <div className={navLinkContainerClass}>
-                <NavLink className="navLink" to="/" onClick={() => {
-                    setShowNavInMobile(false)
-                }}>Welcome</NavLink>
+        <nav className='navbar flex row centered'>
+            <div className='navlinks flex row centered'>
+                <NavLink className="navLink" to="/">Welcome</NavLink>
                 
-                <NavLink className="navLink" to="/home" onClick={() => {
-                    setShowNavInMobile(false)
-                }}>Home</NavLink>
+                <NavLink className="navLink" to="/home">Home</NavLink>
                 
-                <NavLink className="navLink" to="/utility" onClick={() => {
-                    setShowNavInMobile(false)
-                }}>Utility</NavLink>
+                {/* <NavLink className="navLink" to="/utility">Utility</NavLink> */}
             </div>
-
-            
         </nav>
   )
 }

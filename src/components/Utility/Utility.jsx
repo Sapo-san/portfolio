@@ -82,7 +82,7 @@ const Utility = () => {
   const [currentCheatsheet, setCurrentCheatsheet] = useState("none")
 
   return (
-    <div className='navslide flex centered column'>
+    <div className='cheatsheets-container flex column'>
       <div className='utility flex column'>
         <div className='cheatsheet-selector'>
           {/* Cheatsheet finder */}
