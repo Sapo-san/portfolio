@@ -4,11 +4,6 @@ import { useLocation } from 'react-router-dom';
 import './Nav.scss'
 
 const Nav = () => {
-
-    const [showNavInMobile, setShowNavInMobile] = useState(false);
-    const [navLinkContainerClass, setNavLinkContainerClass] = useState('burger-container hide')
-    const [navbarClass, setNavbarClass] = useState('navbar flex row centered')
-
     const location = useLocation()
 
     if (location.pathname === '/') {
@@ -21,8 +16,6 @@ const Nav = () => {
                 <NavLink className="navLink" to="/">Welcome</NavLink>
                 
                 <NavLink className="navLink" to="/home">Home</NavLink>
-                
-                {/* <NavLink className="navLink" to="/utility">Utility</NavLink> */}
             </div>
         </nav>
   )

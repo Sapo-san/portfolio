@@ -13,8 +13,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
+  -ms-overflow-style: none; /* IE/Edge antiguo */
+  scrollbar-width: none;    /* Firefox */
 }
 
 body::-webkit-scrollbar {
