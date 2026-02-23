@@ -37,7 +37,7 @@ const Hema = () => {
             </li>
           </ul>
           <div className='centered-video'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/m3MIwa5AH9U?si=FxXj-rxga4ZzqH3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='iframe-video' src="https://www.youtube.com/embed/m3MIwa5AH9U?si=FxXj-rxga4ZzqH3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <ul>
@@ -48,7 +48,7 @@ const Hema = () => {
             </li>
           </ul>
           <div className='centered-video'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/n5w2Mh6CyXo?si=8eVwlEp0h5aTEwUL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='iframe-video' src="https://www.youtube.com/embed/n5w2Mh6CyXo?si=8eVwlEp0h5aTEwUL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <ul>
@@ -62,7 +62,7 @@ const Hema = () => {
             </li>
           </ul>
           <div className='centered-video'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VwHVw8kNB-U?si=YU0SJZ-Kz9GNFBhJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='iframe-video' src="https://www.youtube.com/embed/VwHVw8kNB-U?si=YU0SJZ-Kz9GNFBhJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <ul>
@@ -73,7 +73,7 @@ const Hema = () => {
             </li>
           </ul>
           <div className='centered-video'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xAI-yd8epAQ?si=5O9G5HQxqzrpfkjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='iframe-video' src="https://www.youtube.com/embed/xAI-yd8epAQ?si=5O9G5HQxqzrpfkjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <p>Other links:</p>
