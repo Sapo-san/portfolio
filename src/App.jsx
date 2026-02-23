@@ -7,6 +7,7 @@ import {
 
 import Welcome from "./components/Welcome/welcome";
 import Home from "./components/Home/home";
+import Hema from "./components/Hema/Hema";
 
 import "./App.scss"
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={ <Welcome/> }/>
           <Route exact path='/home' element={ <Home/> }/>
+          <Route exact path='/hema' element={ <Hema/> }/>
         </Routes>
       </BrowserRouter>
     </div>

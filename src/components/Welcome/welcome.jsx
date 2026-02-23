@@ -133,7 +133,7 @@ const Welcome = () => {
               <p className='aboutme-p1'>
                 Some of my hobbies are reading fantasy/fiction books 📚 and playing 🎮 videogames (recently a lot 
                 of <a href='https://www.youtube.com/watch?v=qiD5VStVH9k' target="_blank">Helldivers 2</a>). I&apos;m 
-                also into fencing, mainly ⚔️ HEMA with Longswords but I'll dabble with other kind of swords
+                also into fencing, mainly <Link to='/hema'>⚔️ HEMA</Link> with Longswords but I'll dabble with other kind of swords
                 or Olympic/lightsaber fencing too. 
               </p>
 

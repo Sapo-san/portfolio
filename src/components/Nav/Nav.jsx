@@ -16,6 +16,9 @@ const Nav = () => {
                 <NavLink className="navLink" to="/">Welcome</NavLink>
                 
                 <NavLink className="navLink" to="/home">Home</NavLink>
+
+                <NavLink className="navLink" to="/hema">HEMA?</NavLink>
+                
             </div>
         </nav>
   )

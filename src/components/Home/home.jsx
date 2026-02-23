@@ -25,16 +25,6 @@ const Home = () => {
                 </a>) : Extremely useful all-in-one developer (programming languages, libraries, frameworks) documentation.
             </li>
             <li>
-              <a href='https://devurls.com/' target="_blank">
-                DEVURLS 
-              </a>: News aggregator for developers. Gotta read some from time to time.
-            </li>
-            <li>
-              <a href='https://devurls.com/' target="_blank">
-                daily.dev 
-              </a>: Another newsfeed for developers. Can customized and it's free (it also has paid features). Beware of AI slop though.
-            </li>
-            <li>
               <a href='https://roadmap.sh/' target="_blank">
                 roadmap.sh
               </a> (<a href='https://github.com/kamranahmedse/developer-roadmap' target="_blank">
@@ -50,6 +40,11 @@ const Home = () => {
               <a href='https://github.com/cloudcommunity/Free-Certifications' target="_blank">
                 Free Certifications | Github Repo
               </a>
+            </li>
+            <li>
+              <a href='https://app.daily.dev/' target="_blank">
+                daily.dev 
+              </a>: A newsfeed for developers. Can customized and it's free (it also has paid features). Beware of AI slop though.
             </li>
             <li>
               ...
@@ -71,7 +66,7 @@ const Home = () => {
             <li>
               <a href='https://github.com/ArcadeRenegade/SidebarDiagnostics' target="_blank">
                 SidebarDiagnostics
-              </a>: Sidebar tool to monitor your computer stats (Like CPU Temp, Speed, GPU Temp...). 
+              </a>: Sidebar tool for windows to monitor your computer stats (Like CPU Temp, Speed, GPU Temp...). 
               Check repository issues before installing.
             </li>
             <li>
