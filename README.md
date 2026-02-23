@@ -1,19 +1,25 @@
-# Portfolio | cristobalherreros.info
+# Portfolio | [cristobalherreros.info](https://cristobalherreros.info)
 
-Originally created with `create-react-app`, now migrated to `vite`.
+This a simple react project to introduce myself to the world. The basics are already there, I want to add some easter eggs from time to time.
 
-## Seting up
-Install Dependencies:
+This project is currently being worked on with [bun](https://bun.sh/) and [vite](https://vite.dev/)
+
+## Setting up
+Install dependencies:
 ```bash
-npm i
+bun i
 ```
 
 Run (dev mode):
 ```bash
-npm run dev
+bun dev
 ```
 
 Build for production:
 ```bash
-npm run build
+bun run build
 ```
+
+## Deployment
+
+Automatic when commiting into main (Github Actions).
