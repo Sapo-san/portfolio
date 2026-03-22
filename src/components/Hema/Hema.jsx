@@ -20,10 +20,10 @@ const Hema = () => {
           of the Renaissance with historical weapons that people of today reenact and practice,
           using the original manuscripts that haven't been lost time as a guide...</p>
           
-          <p>And since that is a <b>VERY</b> broad topic, I'll narrow it to my experience with it both as 
+          <p>And since that is a <b>VERY</b> broad topic, I'll narrow it down to my experience with it both as 
           sport and a hobby: I started Longsword (<a href='https://en.wikipedia.org/wiki/Feder_(fencing)'>Feder</a>) training
           out of curiosity in Santiago with the <a href='https://www.instagram.com/aehch_chile/' target="_blank">AEHCH</a> community
-          back in 2018 to 2022 and it was one the best thing that have happened to me.
+          sometime back in 2018 to 2022 and it was one the best things that have happened to me.
           </p> 
           
           <p>Here's some videos about it so you can check it out:</p>
@@ -32,7 +32,7 @@ const Hema = () => {
             <li>
               <b>Best Looking Longsword Exchanges | HEMA </b>:
               This is what I used to train for! The gear is really expensive so whenever I got to participate in exchanges my 
-              fellow fencers would lend me some (I was in uni back then so not much budget for it lol). I find it funny that
+              fellow fencers would lend me some (I was in uni back then so not much budget for it lol). I find funny that the
               video's title explicitly says "Best Looking" because usually most exchanges get really messy and hard to film.
             </li>
           </ul>
