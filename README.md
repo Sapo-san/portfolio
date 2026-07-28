@@ -1,4 +1,4 @@
-# Portfolio | [cristobalherreros.info](https://cristobalherreros.info)
+# Portfolio | [cristobalherreros.dev](https://cristobalherreros.dev)
 
 This a simple react project to introduce myself to the world. The basics are already there, I want to add some easter eggs from time to time.
 
