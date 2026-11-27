@@ -44,7 +44,7 @@ const Welcome = () => {
       {/* Pantalla de bienvenida */}
       <div className='slide flex column centered'>
         <h1 className='welcome-title'>Hello!</h1>
-        <h2 className='welcome-subtitle'>I&apos;m Cristóbal, Fullstack Web Developer 🚀</h2>
+        <h2 className='welcome-subtitle'>I&apos;m Cristóbal, Fullstack Web Developer <br/> & AI Engineer 🚀 </h2>
         <h2 className='welcome-subtitle'>How can I help you?</h2>
 
         <div className='welcome-buttons'>
@@ -97,7 +97,7 @@ const Welcome = () => {
               <p className='aboutme-p1'>
                 <b>
                   I&apos;m currently working at
-                  <a href="https://www.linkedin.com/company/entel/" target="_blank"> Entel </a>
+                  <a href="https://www.linkedin.com/company/entel/" target="_blank" rel="noreferrer"> Entel </a>
                 </b>
                 (since April 22nd, 2024) as an internal collaborator and Developer.
               </p>
@@ -114,7 +114,7 @@ const Welcome = () => {
 
               <p className='aboutme-p1'>
                 <b>Previous working experiences?</b> Before my current job I worked for 
-                <a href="https://evoluciona.cl/" target="_blank"> Evoluciona Chile </a> for a year
+                <a href="https://evoluciona.cl/" target="_blank" rel="noreferrer"> Evoluciona Chile </a> for a year
                 and a half as Software Engineer and before that I did a bit of freelancing here and
                 there. You can download my CV by pressing the button below.
               </p>
@@ -132,15 +132,15 @@ const Welcome = () => {
 
               <p className='aboutme-p1'>
                 Some of my hobbies are reading fantasy/fiction books 📚 and playing 🎮 videogames (recently a lot 
-                of <a href='https://www.youtube.com/watch?v=qiD5VStVH9k' target="_blank">Helldivers 2</a>). I&apos;m 
-                also into fencing, mainly <Link to='/hema'>⚔️ HEMA</Link> with longswords but I'll dabble with other kinds of fencing too (Olympic, lightsabers, etc). 
+                of <a href='https://www.youtube.com/watch?v=qiD5VStVH9k' target="_blank" rel="noreferrer">Helldivers 2</a>). I&apos;m
+                also into fencing, mainly <Link to='/hema'>⚔️ HEMA</Link> with longswords but I&apos;ll dabble with other kinds of fencing too (Olympic, lightsabers, etc).
               </p>
 
               <p className='aboutme-p1'>
-                I'm also a big advocate for mental health awareness and having proper work-life balance.
-                I've been learning a lot about these topics thanks to <a href='https://www.youtube.com/@HealthyGamerGG' target="_blank">
-                  Dr. K's YouTube channel
-                </a> and the <a href='https://www.healthygamer.gg/' target="_blank">
+                I&apos;m also a big advocate for mental health awareness and having proper work-life balance.
+                I&apos;ve been learning a lot about these topics thanks to <a href='https://www.youtube.com/@HealthyGamerGG' target="_blank" rel="noreferrer">
+                  Dr. K&apos;s YouTube channel
+                </a> and the <a href='https://www.healthygamer.gg/' target="_blank" rel="noreferrer">
                   HealthyGamer foundation
                 </a> so if you are interested on these topics I highly recommend to check out their resources.
               </p>
