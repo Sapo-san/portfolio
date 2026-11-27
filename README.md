@@ -2,22 +2,22 @@
 
 This a simple react project to introduce myself to the world. The basics are already there, I want to add some easter eggs from time to time.
 
-This project is currently being worked on with [bun](https://bun.sh/) and [vite](https://vite.dev/)
+This project uses [npm](https://www.npmjs.com/) and [Vite](https://vite.dev/).
 
 ## Setting up
 Install dependencies:
 ```bash
-bun i
+npm ci
 ```
 
 Run (dev mode):
 ```bash
-bun dev
+npm run dev
 ```
 
 Build for production:
 ```bash
-bun run build
+npm run build
 ```
 
 ## Deployment
