@@ -35,10 +35,6 @@ const Welcome = () => {
     link.click()
   }
 
-  function openInNewTab(url) {
-    window.open(url, '_blank').focus();
-  }
-
   return (
     <div className='welcome flex column'>
       {/* Pantalla de bienvenida */}
@@ -83,9 +79,28 @@ const Welcome = () => {
               {/* Network Icons */}
 
               <div className="profile-socials">
-                <FaLinkedin className='icon' onClick={() => openInNewTab('https://www.linkedin.com/in/cristobalherreros/')}/> 
-                <FaGithub className='icon' onClick={() => openInNewTab('https://github.com/Sapo-san')}/>
-                <IoMailOutline className='icon' onClick={() => window.open('mailto:cristobal.herreros@gmail.com')} />
+                <a
+                  href="https://www.linkedin.com/in/cristobalherreros/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn profile (opens in a new tab)"
+                >
+                  <FaLinkedin className="icon" aria-hidden="true" focusable="false" />
+                </a>
+                <a
+                  href="https://github.com/Sapo-san"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub profile (opens in a new tab)"
+                >
+                  <FaGithub className="icon" aria-hidden="true" focusable="false" />
+                </a>
+                <a
+                  href="mailto:cristobal.herreros@gmail.com"
+                  aria-label="Send an email to Cristóbal Herreros"
+                >
+                  <IoMailOutline className="icon" aria-hidden="true" focusable="false" />
+                </a>
               </div>
 
               {/* Me talking about myself */}

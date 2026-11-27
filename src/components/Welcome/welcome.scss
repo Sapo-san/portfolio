@@ -166,6 +166,22 @@
     color: rgb(201, 201, 201)
 }
 
+.profile-socials a {
+    display: inline-flex;
+    color: inherit;
+    border-radius: 0.15em;
+}
+
+.profile-socials a:hover,
+.profile-socials a:focus-visible {
+    color: white;
+}
+
+.profile-socials a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
 .profile-socials .icon {
     transition: color 200ms ease-in-out;
 }
