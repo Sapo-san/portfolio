@@ -43,7 +43,7 @@ const Welcome = () => {
     <div className='welcome flex column'>
       {/* Pantalla de bienvenida */}
       <div className='slide flex column centered'>
-        <h1 className='welcome-title'>Welcome to my Website</h1>
+        <h1 className='welcome-title'>Hello!</h1>
         <h2 className='welcome-subtitle'>I&apos;m Cristóbal, Fullstack Web Developer 🚀</h2>
         <h2 className='welcome-subtitle'>How can I help you?</h2>
 
@@ -146,7 +146,6 @@ const Welcome = () => {
               </p>
             </div>
           </div>
-          
           {/* <p className='aboutme-p2'>
             <h2>My Tech Stack is:</h2>
               <ul>
@@ -159,11 +158,6 @@ const Welcome = () => {
                 <li>AI tools: Whoever hallucinates less at the moment (ChatGPT, Gemini, etc...)</li>
               </ul>
           </p> */}
-
-          <h1 className='portfolio-title'>Contact info:</h1>
-          <p className='aboutme-p1'>
-            You can send me a message on <a href="https://www.linkedin.com/in/cristobalherreros/" target="_blank">LinkedIn</a> or write me an email to: <a href="mailto:cristobal.herreros@gmail.com">cristobal.herreros@gmail.com</a>
-          </p>
         </div>
       </div>
       
