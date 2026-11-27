@@ -36,7 +36,7 @@ const Hema = () => {
             </li>
           </ul>
           <div className='centered-video'>
-            <iframe className='iframe-video' src="https://www.youtube.com/embed/m3MIwa5AH9U?si=FxXj-rxga4ZzqH3U" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='iframe-video' src="https://www.youtube.com/embed/m3MIwa5AH9U?si=FxXj-rxga4ZzqH3U" title="Best Looking Longsword Exchanges | HEMA" loading="lazy" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
 
           <ul>
@@ -47,7 +47,7 @@ const Hema = () => {
             </li>
           </ul>
           <div className='centered-video'>
-            <iframe className='iframe-video' src="https://www.youtube.com/embed/n5w2Mh6CyXo?si=8eVwlEp0h5aTEwUL" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='iframe-video' src="https://www.youtube.com/embed/n5w2Mh6CyXo?si=8eVwlEp0h5aTEwUL" title="Expert Saber Sparring: Lee Smith vs Richard Marsden" loading="lazy" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
 
           <ul>
@@ -61,7 +61,7 @@ const Hema = () => {
             </li>
           </ul>
           <div className='centered-video'>
-            <iframe className='iframe-video' src="https://www.youtube.com/embed/VwHVw8kNB-U?si=YU0SJZ-Kz9GNFBhJ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='iframe-video' src="https://www.youtube.com/embed/VwHVw8kNB-U?si=YU0SJZ-Kz9GNFBhJ" title="Longsword: Josh vs David" loading="lazy" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
 
           <ul>
@@ -72,7 +72,7 @@ const Hema = () => {
             </li>
           </ul>
           <div className='centered-video'>
-            <iframe className='iframe-video' src="https://www.youtube.com/embed/xAI-yd8epAQ?si=5O9G5HQxqzrpfkjM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='iframe-video' src="https://www.youtube.com/embed/xAI-yd8epAQ?si=5O9G5HQxqzrpfkjM" title="Iron Triangle Explained (HEMA) - Foundations of Sword Fighting" loading="lazy" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
 
           <p>Other links:</p>
